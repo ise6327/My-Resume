@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    border: 1px solid red;
+    /* padding : 0;
+    margin : 0;
+    box-sizing : border-box;   */
+}
+
+:root {
+    --primary-color : #2b13ff;
+    --text-color : #727171;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    color : black;
+}
+
+/* common styles */
+img {
+    width : 100%;
+}
+a {
+    text-decoration : none;
+    color : rgb(0, 0, 0);
+}
+.profile_information {
+    margin : 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+.skills{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+/* layout */
+.container {
+    width : 90%;
+    max-width: 1000px;
+    margin : 0 auto;
+    display: grid;
+    padding: 5rem; /* rem = 10px x 5 = 50px */
+    background: 070707;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem; 
+}
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 3rem;
+        gap: 7rem;
+    }
+}
+
+.profile { 
+    grid-column: 1 / -1; 
+    margin-bottom: 2rem;
+}
+
+/* profile */
+.profile_container {
+    display: flex;
+    gap: 2rem;
+}
+
+.profile_image {
+    max-width: 100px;
+}
+
+.profile_title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.download_button {
+    display: block;
+    text-decoration: underline;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
+.download_button:hover {
+    color: var(--primary-color);
+}
+@media only screen and (max-width: 768px) {
+    .profile_container {
+        flex-direction: column;
+    }
+}
+
+/* capabilities */
+.skills_list {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    line-height: 2;
+}
