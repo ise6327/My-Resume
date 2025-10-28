@@ -8,8 +8,8 @@
 }
 
 :root {
-    --primary-color : #2b13ff;
-    --text-color : #727171;
+    --primary-color : darkblue;
+    --text-color : black;
 }
 
 html {
@@ -18,40 +18,57 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: white;
-    color : black;
+    background-color: rgb(145, 138, 138);
+    color: black;
+    border: 2px solid green;
 }
 
 /* common styles */
 img {
     width : 100%;
 }
+
 a {
     text-decoration : none;
+    font-size: 1.5rem;
     color : rgb(0, 0, 0);
+    border: 1px solid yellow;
 }
-.profile_information {
-    margin : 1rem;
+
+h3 {
+    font-size: 1.7rem;
+}
+.professional-summary {
+    margin : 20px 0px 0px 0px;
     font-size: 1.5rem;
     font-weight: 400;
     color: var(--text-color);
+    text-align: justify;
 }
-.skills{
+
+h2 {
     font-size: 2rem;
     font-weight: 700;
     color: var(--primary-color);
     text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.5rem;
 }
 /* layout */
 .container {
     width : 90%;
     max-width: 1000px;
     margin : 0 auto;
-    display: grid;
-    padding: 5rem; /* rem = 10px x 5 = 50px */
+    /* display: grid; */
+    /* padding: 5rem; */
     background: 070707;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem; 
+    /*grid-template-columns: 1fr 1fr; /* 2 columns of equal width */
+    gap: 4rem;
+    border-color: blue;
 }
 @media only screen and (max-width: 768px) {
     .container {
@@ -63,7 +80,6 @@ a {
 }
 
 .profile { 
-    grid-column: 1 / -1; 
     margin-bottom: 2rem;
 }
 
@@ -71,14 +87,25 @@ a {
 .profile_container {
     display: flex;
     gap: 2rem;
+    align-items: center;
+    border: 1px solid rgb(14, 248, 14);
 }
 
 .profile_image {
     max-width: 100px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: middle;
 }
 
 .profile_title {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 400;
     text-transform: uppercase;
 }
@@ -98,8 +125,9 @@ a {
 }
 
 /* capabilities */
-.skills_list {
-    margin-top: 1rem;
-    margin-left: 2rem;
-    line-height: 2;
+.skills_list,li {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    line-height: 1;
+    font-size: 1.5rem;
 }
