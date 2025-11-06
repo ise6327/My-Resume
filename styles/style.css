@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     /* padding : 0;
     margin : 0;
     box-sizing : border-box;   */
@@ -57,6 +57,7 @@ h2 {
 
 p {
     font-size: 1.5rem;
+    font-weight: normal;
 }
 /* layout */
 .container {
@@ -134,4 +135,12 @@ p {
 
 .tech-skills-list, .soft-skills-list, .training-list {
     column-count: 3;
+}
+
+.responsibilites-1, .responsibilites-2 {
+    font-weight: 400;
+}
+
+.company-1, .company-2 {
+    justify-content: space-between;
 }
