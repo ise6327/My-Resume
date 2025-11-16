@@ -18,9 +18,9 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(145, 138, 138);
+    background-color: rgb(255, 255, 255);
     color: black;
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 
 /* common styles */
@@ -89,7 +89,7 @@ p {
     display: flex;
     gap: 2rem;
     align-items: center;
-    border: 1px solid rgb(14, 248, 14);
+    /* border: 1px solid rgb(14, 248, 14); */
 }
 
 .profile_image {
